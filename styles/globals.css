@@ -1,0 +1,352 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+/* Grid.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6,  1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    height: 100%;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+  
+  .grid-item {
+    background-color: transparent;
+
+    text-align: center;
+    /* border-radius: 10px; */
+    margin-top: 10px;
+    overflow: hidden; /* Ensure images don't overflow the grid item */
+  }
+
+  .grid-image {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 8px; /* Optional: add rounded corners */
+  }
+  i{
+    margin-left:5px;
+  }
+  svg{
+    margin-left:5px;
+  }
+  .static-circle {
+    width: 90%; /* Set the width of the circle */
+    height: 0;
+    padding-bottom: 90%; /* Maintain aspect ratio to create a circle */
+    border-radius: 50%; /* Create a circle */
+    background-color: #3498db; /* Background color of the circle */
+  }
+/* CSS styles */
+
+    .techBadge{
+
+    transition: .25s transform,.25s box-shadow;
+    opacity: 0.7;
+  }  
+  
+  .btn
+  {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    opacity: 0.7;
+  }
+  a {
+    color: #08f;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .btn-node{
+    color: white;
+    background-color: #43853d;
+    border-color: #43853d;
+  }
+  .btn-node:hover{
+    color: white;
+    background-color: #43853d;
+    border-color: #43853d;
+  }
+  .btn-angular {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  .btn-angular:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  .btn-react {
+    color: #000;
+    background-color: #61dbfb;
+    border-color: #61dbfb;
+  }
+  .btn-react:hover {
+    color: #000;
+    background-color: #61dbfb;
+    border-color: #61dbfb;
+  }
+  
+  .btn-javascript {
+    color: #000;
+    background-color: #F0DB4F;
+    border-color: #F0DB4F;
+  }
+  .btn-javascript:hover {
+    color: #000;
+    background-color: #F0DB4F;
+    border-color: #F0DB4F;
+  }
+  .btn-typescript {
+    color: #fff;
+    background-color: #007acc;
+    border-color: #007acc;
+  }
+  .btn-typescript:hover {
+    color: #fff;
+    background-color: #007acc;
+    border-color: #007acc;
+  }
+  .btn-figma {
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+  .btn-figma:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+  .btn-adobe {
+    color: #fff;
+    background-color: #450135;
+    border-color: #450135;
+  } 
+  .btn-adobe:hover {
+    color: #fff;
+    background-color: #450135;
+    border-color: #450135;
+  } 
+  .btn-sketch {
+    color: #000;
+    background-color: #f5a800;
+    border-color: #f5a800;
+  }
+  .btn-sketch:hover {
+    color: #000;
+    background-color: #f5a800;
+    border-color: #f5a800;
+  } 
+  
+  .btn-html {
+    color: #fff;
+    background-color: #e96228;
+    border-color: #e96228;
+  }
+  .btn-html:hover {
+    color: #fff;
+    background-color: #e96228;
+    border-color: #e96228;
+  } 
+  
+  .btn-css {
+    color: #fff;
+    background-color: #2862e9;
+    border-color: #2862e9;
+  }
+  .btn-css:hover {
+    color: #fff;
+    background-color: #2862e9;
+    border-color: #2862e9;
+  } 
+  
+  .btn-sass {
+    color: #fff;
+    background-color: #c76494;
+    border-color: #c76494;
+  } 
+  .btn-sass:hover {
+    color: #fff;
+    background-color: #c76494;
+    border-color: #c76494;
+  } 
+  
+  .btn-bootstrap {
+    color: #fff;
+    background-color: #8411f6;
+    border-color: #8411f6;
+  } 
+  .btn-bootstrap:hover {
+    color: #fff;
+    background-color: #8411f6;
+    border-color: #8411f6;
+  } 
+  
+  .btn-tailwind {
+    color: #fff;
+    background-color: #38bdf8;
+    border-color: #38bdf8;
+  } 
+  .btn-tailwind:hover {
+    color: #fff;
+    background-color: #38bdf8;
+    border-color: #38bdf8;
+  } 
+  
+  .btn-material {
+    color: #fff;
+    background-color: #007fff;
+    border-color: #007fff;
+  } 
+  .btn-material:hover {
+    color: #fff;
+    background-color: #007fff;
+    border-color: #007fff;
+  } 
+  
+  .btn-uikit {
+    color: #fff;
+    background-color: #2395f2;
+    border-color: #2395f2;
+  }
+  .btn-uikit:hover {
+    color: #fff;
+    background-color: #2395f2;
+    border-color: #2395f2;
+  }
+
+  .btn-d3{
+    color: #fff;
+    background-color: #ee8447;
+    border-color: #ee8447;
+  }
+  .btn-d3:hover {
+    color: #fff;
+    background-color: #ee8447;
+    border-color: #ee8447;
+  }
+  .btn-graphql{
+    color: #fff;
+    background-color: #e535ab;
+    border-color: #e535ab;
+  }
+  .btn-graphql:hover {
+    color: #fff;
+    background-color: #e535ab;
+    border-color: #e535ab;
+  }
+  .btn-nextjs{
+    color: #fff;
+    background-color: black;
+    border-color: black;
+  }
+  .btn-nextjs:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+  }
+  .btn-aws{
+    color: #000;
+    background-color: #f79400;
+    border-color: #f79400;
+  }
+  .btn-aws:hover {
+    color: #000;
+    background-color: #f79400;
+    border-color: #f79400;
+  }
+ 
+
+
+  @media only screen and (hover: hover) {
+    .techBadge:hover {
+      transform: translate(-.5px,-1px);
+      box-shadow: 4px 7px 3px #888 !important;
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (hover: hover) {
+    .btn:hover {
+      transform: translate(-.5px,-1px);
+      box-shadow: 4px 7px 3px #888 !important;
+      opacity: 1;
+    }
+  }
+
+  h4 {
+    padding: 1rem 1.5rem;
+    background: #00305a;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: .209375rem;
+    font-family: "PrimanaPro-Light",Verdana,sans-serif;
+}
+
+h4 {
+  background: #009dd9;
+}
+.vertical-timeline--two-columns .vertical-timeline-element-content{
+  padding: 0 !important;
+}
+
+.vertical-timeline-element-subtitle {
+padding: 10px !important;
+}
+
+.vertical-timeline-element-content p{
+  padding: 10px !important;
+}
+
+.dark .vertical-timeline::before{
+  background: white;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date{
+  color:white;
+}
