@@ -807,9 +807,7 @@ export default function Home() {
       </main>
       <div className="footer">
       <div className="socialMedia">
-        <InstagramIcon />
-        <TwitterIcon />
-        <FacebookIcon />
+
         <LinkedInIcon />
         <EmailIcon />
         <GithubIcon />
