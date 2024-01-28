@@ -26,6 +26,12 @@ import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
+import GithubIcon from "@material-ui/icons/GitHub";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -258,11 +264,7 @@ export default function Home() {
               </a>{" "}
               </span>
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
-            </div>
+           
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
@@ -801,7 +803,19 @@ export default function Home() {
        
       </VerticalTimeline>
     </div>
+   
       </main>
+      <div className="footer">
+      <div className="socialMedia">
+        <InstagramIcon />
+        <TwitterIcon />
+        <FacebookIcon />
+        <LinkedInIcon />
+        <EmailIcon />
+        <GithubIcon />
+      </div>
+
+    </div>
     </div>
   );
 }
