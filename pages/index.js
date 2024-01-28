@@ -42,6 +42,8 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [animateVertical, setanimateVertical] = useState(true);
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -87,6 +89,15 @@ export default function Home() {
       clearInterval(ticker);
     };
   }, [text]);
+  useEffect(()=>{
+    if(window.innerWidth <600){
+      setanimateVertical(false)
+    }
+    else{
+      setanimateVertical(true)
+
+    }
+  },[])
   const handleLinkedInClick = () => {
     // Redirect to your LinkedIn profile
     window.open("https://www.linkedin.com/in/jayaramchandrasekarakumaran/");
@@ -625,7 +636,7 @@ export default function Home() {
         <section className="py-10">
           <div name="projects">
             <nav className="py-10 flex justify-between dark:text-white">
-              <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+              <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
               <ul className="flex items-center">
                 <li>
                   <a
@@ -707,7 +718,7 @@ export default function Home() {
           </ul>
         </nav>
         <div className="experience" name="timeLine">
-          <VerticalTimeline lineColor="#3e497a">
+          <VerticalTimeline animate={animateVertical} lineColor="#3e497a">
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="2020 - Present"
@@ -776,7 +787,7 @@ export default function Home() {
               icon={<SchoolIcon />}
             >
               <h4 className="vertical-timeline-element-title">
-                NJIT , Newark , CA
+                NJIT , Newark , NJ
               </h4>
 
               <h3 className="vertical-timeline-element-subtitle">
@@ -792,7 +803,7 @@ export default function Home() {
               icon={<SchoolIcon />}
             >
               <h4 className="vertical-timeline-element-title">
-                NJIT , Newark , CA
+                NJIT , Newark , NJ
               </h4>
 
               <h3 className="vertical-timeline-element-subtitle">
