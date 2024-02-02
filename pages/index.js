@@ -306,16 +306,13 @@ export default function Home() {
             </nav>
 
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I&apos;ve done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+            As a UI/UX engineer and developer, I navigate the digital landscape with fluency in Angular, React.js, JavaScript, and TypeScript. 
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            My design arsenal includes Figma, Adobe XD, Sketch, and Visio, while my development toolkit encompasses HTML, CSS, SASS, Bootstrap, Tailwind, AG-grid, PrimeNG, Material, UI Kit, and D3.js.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            From legacy systems in AngularJS to progressive solutions in Node.js, GraphQL, and Next.js, I craft user-centric experiences that seamlessly blend creativity and functionality
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -651,16 +648,13 @@ export default function Home() {
               </ul>
             </nav>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I&apos;ve done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+            Versatile designer and developer on a mission. 
+            From remote collaborations with agencies to startup consultations, I&apos;ve crafted digital products with talented collaborators. 
+              
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            Offering a spectrum of services—brand design, programming, and teaching—to bring innovation to both business and consumer spaces
+
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -754,8 +748,8 @@ export default function Home() {
                 San Francisco, CA & Chennai,India
               </h3>
               <p>
-                Helped the team launch 2 major features by working both in the
-                front end and back end.
+              Designed and developed two websites for an AI startup in San Francisco and an online e-learning platform in Chennai
+              
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
