@@ -667,15 +667,7 @@ export default function Home() {
                 src={web1}
               />
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
-            </div>
+            
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
@@ -685,15 +677,7 @@ export default function Home() {
                 src={web3}
               />
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
+           
           </div>
         </section>
         <nav className="py-10 flex justify-between dark:text-white">
@@ -735,23 +719,7 @@ export default function Home() {
               </p>
             </VerticalTimelineElement>
 
-            // <VerticalTimelineElement
-            //   className="vertical-timeline-element--work"
-            //   date="2020 - 2021"
-            //   iconStyle={{ background: "#e9d35b", color: "#fff" }}
-            //   icon={<WorkIcon />}
-            // >
-            //   <h4 className="vertical-timeline-element-title">
-            //     Freelance Developer
-            //   </h4>
-            //   <h3 className="vertical-timeline-element-subtitle">
-            //     San Francisco, CA & Chennai,India
-            //   </h3>
-            //   <p>
-            //   Designed and developed two websites for an AI startup in San Francisco and an online e-learning platform in Chennai
-              
-            //   </p>
-            // </VerticalTimelineElement>
+          
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2018 - 2020"
