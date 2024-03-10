@@ -735,23 +735,23 @@ export default function Home() {
               </p>
             </VerticalTimelineElement>
 
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              date="2020 - 2021"
-              iconStyle={{ background: "#e9d35b", color: "#fff" }}
-              icon={<WorkIcon />}
-            >
-              <h4 className="vertical-timeline-element-title">
-                Freelance Developer
-              </h4>
-              <h3 className="vertical-timeline-element-subtitle">
-                San Francisco, CA & Chennai,India
-              </h3>
-              <p>
-              Designed and developed two websites for an AI startup in San Francisco and an online e-learning platform in Chennai
+            // <VerticalTimelineElement
+            //   className="vertical-timeline-element--work"
+            //   date="2020 - 2021"
+            //   iconStyle={{ background: "#e9d35b", color: "#fff" }}
+            //   icon={<WorkIcon />}
+            // >
+            //   <h4 className="vertical-timeline-element-title">
+            //     Freelance Developer
+            //   </h4>
+            //   <h3 className="vertical-timeline-element-subtitle">
+            //     San Francisco, CA & Chennai,India
+            //   </h3>
+            //   <p>
+            //   Designed and developed two websites for an AI startup in San Francisco and an online e-learning platform in Chennai
               
-              </p>
-            </VerticalTimelineElement>
+            //   </p>
+            // </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2018 - 2020"
