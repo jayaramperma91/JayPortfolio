@@ -708,8 +708,7 @@ export default function Home() {
                 San Francisco, CA
               </h3>
               <p>
-                Initiated a company-wide development project in Angular and
-                React, designing a unified application layout. Oversaw the
+                Initiated a company-wide development project in Angular, designing a unified application layout. Oversaw the
                 complete development, designing layouts, themes, business
                 workflows, components, controls, charts, and data grids across
                 more than ten applications, enhancing the application used by
@@ -770,7 +769,7 @@ export default function Home() {
                 Masters&apos;s Degree
               </h3>
 
-              <p> Computer Engineering</p>
+              <p> Electrical Engineering</p>
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
