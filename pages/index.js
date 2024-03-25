@@ -1,4 +1,6 @@
 import Head from "next/head";
+import React from "react";
+
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -40,8 +42,26 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 
+import Dialog from "@mui/material/Dialog";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
+import Slide from "@mui/material/Slide";
+
+import ProjectItem from "./api/ProjectItem";
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const [darkMode, setDarkMode] = useState(true);
   const [animateVertical, setanimateVertical] = useState(true);
 
   const [loopNum, setLoopNum] = useState(0);
@@ -89,15 +109,13 @@ export default function Home() {
       clearInterval(ticker);
     };
   }, [text]);
-  useEffect(()=>{
-    if(window.innerWidth <600){
-      setanimateVertical(false)
+  useEffect(() => {
+    if (window.innerWidth < 600) {
+      setanimateVertical(false);
+    } else {
+      setanimateVertical(true);
     }
-    else{
-      setanimateVertical(true)
-
-    }
-  },[])
+  }, []);
   const handleLinkedInClick = () => {
     // Redirect to your LinkedIn profile
     window.open("https://www.linkedin.com/in/jayaramchandrasekarakumaran/");
@@ -306,13 +324,20 @@ export default function Home() {
             </nav>
 
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            As a UI/UX engineer and developer, I navigate the digital landscape with fluency in Angular, React.js, JavaScript, and TypeScript. 
+              As a UI/UX engineer and developer, I navigate the digital
+              landscape with fluency in Angular, React.js, JavaScript, and
+              TypeScript.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            My design arsenal includes Figma, Adobe XD, Sketch, and Visio, while my development toolkit encompasses HTML, CSS, SASS, Bootstrap, Tailwind, AG-grid, PrimeNG, Material, UI Kit, and D3.js.
+              My design arsenal includes Figma, Adobe XD, Sketch, and Visio,
+              while my development toolkit encompasses HTML, CSS, SASS,
+              Bootstrap, Tailwind, AG-grid, PrimeNG, Material, UI Kit, and
+              D3.js.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            From legacy systems in AngularJS to progressive solutions in Node.js, GraphQL, and Next.js, I craft user-centric experiences that seamlessly blend creativity and functionality
+              From legacy systems in AngularJS to progressive solutions in
+              Node.js, GraphQL, and Next.js, I craft user-centric experiences
+              that seamlessly blend creativity and functionality
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -648,26 +673,50 @@ export default function Home() {
               </ul>
             </nav>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Versatile designer and developer on a mission. 
-            From remote collaborations with agencies to startup consultations, I&apos;ve crafted digital products with talented collaborators. 
-              
+              Versatile designer and developer on a mission. From remote
+              collaborations with agencies to startup consultations, I&apos;ve
+              crafted digital products with talented collaborators.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Offering a spectrum of services—brand design, programming, and teaching—to bring innovation to both business and consumer spaces
-
+              Offering a spectrum of services—brand design, programming, and
+              teaching—to bring innovation to both business and consumer spaces
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1 bg-white">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web1}
-              />
+              />{" "}
+              <p className="pl-10 pr-10">
+                <b>Description</b>
+              </p>
+              <p className="pl-10 pr-10 py-2">
+                Spearheaded a transformative company-wide development initiative
+                in Angular and React. Engineered top-tier web application for
+                over ten different trading and asset allocation teams,
+                meticulously curating layouts, themes, and components to blend
+                user-centric design with cutting-edge functionality Led a
+                comprehensive upgrade project, transitioning from KnockoutJS to
+                Angular 3/4/5 for a multi-asset trading system orchestrating
+                over 10 million monthly trades. Engineered a highly
+                sophisticated portfolio management application,enhancing the
+                optimization of cash flow visibility, streamlining trade
+                execution, and improving overall efficiency in asset management
+              </p>
+              <p className="pl-10 pr-10">
+                <b>Technologies </b>
+              </p>
+              <p className="pl-10 pr-10 py-1">
+                Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
+                Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
+                Karma
+              </p>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 bg-white">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -675,8 +724,32 @@ export default function Home() {
                 layout="responsive"
                 src={web2}
               />
+             <p className="pl-10 pr-10">
+                <b>Description</b>
+              </p>
+              <p className="pl-10 pr-10 py-2">
+                Spearheaded a transformative company-wide development initiative
+                in Angular and React. Engineered top-tier web application for
+                over ten different trading and asset allocation teams,
+                meticulously curating layouts, themes, and components to blend
+                user-centric design with cutting-edge functionality Led a
+                comprehensive upgrade project, transitioning from KnockoutJS to
+                Angular 3/4/5 for a multi-asset trading system orchestrating
+                over 10 million monthly trades. Engineered a highly
+                sophisticated portfolio management application,enhancing the
+                optimization of cash flow visibility, streamlining trade
+                execution, and improving overall efficiency in asset management
+              </p>
+              <p className="pl-10 pr-10">
+                <b>Technologies </b>
+              </p>
+              <p className="pl-10 pr-10 py-1">
+                Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
+                Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
+                Karma
+              </p>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 bg-white">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -684,8 +757,32 @@ export default function Home() {
                 layout="responsive"
                 src={web3}
               />
+             <p className="pl-10 pr-10">
+                <b>Description</b>
+              </p>
+              <p className="pl-10 pr-10 py-2">
+                Spearheaded a transformative company-wide development initiative
+                in Angular and React. Engineered top-tier web application for
+                over ten different trading and asset allocation teams,
+                meticulously curating layouts, themes, and components to blend
+                user-centric design with cutting-edge functionality Led a
+                comprehensive upgrade project, transitioning from KnockoutJS to
+                Angular 3/4/5 for a multi-asset trading system orchestrating
+                over 10 million monthly trades. Engineered a highly
+                sophisticated portfolio management application,enhancing the
+                optimization of cash flow visibility, streamlining trade
+                execution, and improving overall efficiency in asset management
+              </p>
+              <p className="pl-10 pr-10">
+                <b>Technologies </b>
+              </p>
+              <p className="pl-10 pr-10 py-1">
+                Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
+                Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
+                Karma
+              </p>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 bg-white">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -693,6 +790,28 @@ export default function Home() {
                 layout="responsive"
                 src={web4}
               />
+             <p className="pl-10 pr-10">
+                <b> <a href="https://www.pantechsolutions.net">
+                  Pantech Solutions
+                </a> </b>
+              </p>
+              <p className="pl-10 pr-10 py-2">
+              Collaborated with an e-learning platform, contributing UI expertise to create
+engaging and user-friendly interfaces for online courses 
+
+Worked with a startup's team to integrate detailed content while maintaining a
+user-friendly interface, ensuring visitors could easily explore and understand the
+showcased AI capabilities.
+Utilized Tailwind and SCSS (SASS) for efficient styling, ensuring a visually
+appealing and cohesive design across various screens.
+              </p>
+              <p className="pl-10 pr-10">
+                <b>Technologies </b>
+              </p>
+              <p className="pl-10 pr-10 py-1">
+              React, HTML5, CSS3, JavaScript/Typescript, Bootstrap,
+Tailwind, SCSS (SASS), Figma
+              </p>
             </div>
           </div>
         </section>
@@ -748,8 +867,29 @@ export default function Home() {
                 San Francisco, CA & Chennai,India
               </h3>
               <p>
-              Designed and developed two websites for an AI startup in San Francisco and an online e-learning platform in Chennai
-              
+                Designed and developed two websites for an AI startup in San
+                Francisco and an online e-learning platform in Chennai.Engaged
+                in impactful projects across diverse industry landscapes, I
+                contributed my expertise to elevate user experiences and
+                interface functionalities.  
+               
+              </p>
+              <p>
+              <a href="https://www.pantechsolutions.net">
+                Pantech Solutions
+                </a>
+                , I played a key role in refining the UI of their e-learning
+                platform. Collaborating with the team, I ensured the creation of
+                engaging and user-friendly interfaces for online courses.
+              </p>
+              <p>
+                Simultaneously, in the dynamic environment of an AI startup
+                based in the Bay Area, I contributed to crafting seamless user
+                interfaces that showcased cutting-edge AI capabilities. This
+                dual experience allowed me to navigate varied challenges,
+                applying my skills to enhance digital interactions both in
+                established platforms and innovative startups in the tech hub of
+                the Bay Area.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
