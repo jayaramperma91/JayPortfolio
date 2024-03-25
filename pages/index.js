@@ -118,7 +118,7 @@ export default function Home() {
   }, []);
   const handleLinkedInClick = () => {
     // Redirect to your LinkedIn profile
-    window.open("www.linkedin.com/in/jayaram-chandrasekara-kumaran");
+    window.open("https://www.linkedin.com/in/jayaram-chandrasekara-kumaran/");
   };
   const handleMailClick = () => {
     window.location.href = "mailto:jayaramperma91@gmail.com";
