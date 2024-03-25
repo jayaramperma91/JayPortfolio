@@ -205,7 +205,7 @@ export default function Home() {
               I am a{" "}
               <span
                 className="txt-rotate"
-                data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                data-rotate="[ 'Web Developer', 'Web Designer', 'UI/UX Designer' ]"
               >
                 <span className="wrap">{text}</span>
               </span>
@@ -799,7 +799,7 @@ export default function Home() {
               Collaborated with an e-learning platform, contributing UI expertise to create
 engaging and user-friendly interfaces for online courses 
 
-Worked with a startup's team to integrate detailed content while maintaining a
+Worked with a startup&apos;s team to integrate detailed content while maintaining a
 user-friendly interface, ensuring visitors could easily explore and understand the
 showcased AI capabilities.
 Utilized Tailwind and SCSS (SASS) for efficient styling, ensuring a visually
