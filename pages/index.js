@@ -57,7 +57,6 @@ export default function Home() {
   const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
@@ -116,6 +115,45 @@ export default function Home() {
       setanimateVertical(true);
     }
   }, []);
+
+  const [isZoomed1, setIsZoomed1] = useState(false);
+
+  const handleZoom1 = () => {
+    setIsZoomed1(true);
+  };
+
+  const handleUnzoom1 = () => {
+    setIsZoomed1(false);
+  };
+  const [isZoomed2, setIsZoomed2] = useState(false);
+  
+  const handleZoom2 = () => {
+    setIsZoomed2(true);
+  };
+
+  const handleUnzoom2 = () => {
+    setIsZoomed2(false);
+  };
+
+  const [isZoomed3, setIsZoomed3] = useState(false);
+
+  const handleZoom3 = () => {
+    setIsZoomed3(true);
+  };
+
+  const handleUnzoom3 = () => {
+    setIsZoomed3(false);
+  };
+
+  const [isZoomed4, setIsZoomed4] = useState(false);
+
+  const handleZoom4 = () => {
+    setIsZoomed4(true);
+  };
+
+  const handleUnzoom4 = () => {
+    setIsZoomed4(false);
+  };
   const handleLinkedInClick = () => {
     // Redirect to your LinkedIn profile
     window.open("https://www.linkedin.com/in/jayaram-chandrasekara-kumaran/");
@@ -683,13 +721,16 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 bg-white">
+            <div className={`basis-1/3 flex-1 picture-container bg-white `}>
               <Image
-                className="rounded-lg object-cover"
+              className={`rounded-lg object-cover picture-container ${isZoomed1 ? 'zoomed' : ''}`}
+              
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web1}
+                onMouseEnter={handleZoom1}
+        onMouseLeave={handleUnzoom1}
               />{" "}
               <p className="pl-10 pr-10">
                 <b>Description</b>
@@ -718,10 +759,12 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1 bg-white">
               <Image
-                className="rounded-lg object-cover"
+              className={`rounded-lg object-cover picture-container ${isZoomed2 ? 'zoomed' : ''}`}
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                onMouseEnter={handleZoom2}
+                onMouseLeave={handleUnzoom2}
                 src={web2}
               />
              <p className="pl-10 pr-10">
@@ -751,11 +794,13 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1 bg-white">
               <Image
-                className="rounded-lg object-cover"
+              className={`rounded-lg object-cover picture-container ${isZoomed3 ? 'zoomed' : ''}`}
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web3}
+                onMouseEnter={handleZoom3}
+                onMouseLeave={handleUnzoom3}
               />
              <p className="pl-10 pr-10">
                 <b>Description</b>
@@ -784,11 +829,13 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1 bg-white">
               <Image
-                className="rounded-lg object-cover"
+              className={`rounded-lg object-cover picture-container ${isZoomed4 ? 'zoomed' : ''}`}
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web4}
+                onMouseEnter={handleZoom4}
+                onMouseLeave={handleUnzoom4}
               />
              <p className="pl-10 pr-10">
                 <b> <a href="https://www.pantechsolutions.net">
