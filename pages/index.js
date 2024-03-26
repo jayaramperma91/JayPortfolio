@@ -280,7 +280,7 @@ export default function Home() {
             </ul>
             
           </nav>
-          <h1 className="font-burtons text-xl dark:text-white">Press a letter for a theme</h1>
+          <h1 className="font-burtons text-xl dark:text-white">Press a letter for a color : {color}</h1>
 
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
