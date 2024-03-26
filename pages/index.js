@@ -271,12 +271,12 @@ export default function Home() {
                   Timeline
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
-              </li>
+              </li> */}
             </ul>
             
           </nav>
