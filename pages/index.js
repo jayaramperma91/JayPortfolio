@@ -91,7 +91,7 @@ export default function Home() {
   };
   const [darkMode, setDarkMode] = useState(true);
   const [animateVertical, setanimateVertical] = useState(true);
-  const [color,setColor] = useState('white')
+  const [color,setColor] = useState('quartz')
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
