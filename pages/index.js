@@ -817,7 +817,7 @@ export default function Home() {
                 Hover over to show description
               </p>
               <p className={`pl-10 pr-10 py-2 ${isZoomed2?'showBlock':'hideBlock'}`} >
-              Led the design and development of Mellon.com's public-facing website using React, 
+              Led the design and development of Mellon.com&apos;s public-facing website using React, 
               implementing a responsive and dynamic user interface with a focus on performance optimization and scalability. 
               Utilized React to deliver a seamless browsing 
               experience across various devices. Successfully deployed and maintained 
