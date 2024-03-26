@@ -387,3 +387,118 @@ padding: 10px !important;
 .zoomed {
   transform: scale(1.1); /* Adjust the scale factor as needed */
 }
+
+.my-div:hover {
+  /* Hover effect */
+  transform: translateY(-5px); /* Move up 5 pixels on hover */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* Bottom shadow on hover */
+  transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+
+.apple{
+  background-color: #8b0202 !important;
+}
+.black{
+  background-color: black !important;
+}
+
+.calamine{
+  background-color: #fea0b7 !important;
+}
+.dandelion{
+  background-color: #FED85D !important;
+}
+
+.EmeraldGreen{
+  background-color: #50C878 !important;
+}
+
+.Fawn{
+  background-color: #e5aa70 !important;
+}
+
+.grape{
+  background-color: #6f2da8 !important;
+}
+
+.heaven{
+  background-color: #b4b0ec !important;
+}
+
+.zomp{
+  background-color: #39a78e !important;
+}
+
+.yellow{
+  background-color: yellow !important;
+}
+
+.Xanadu{
+  background-color: #738678 !important;
+}
+
+.white{
+  background-color: white !important;
+}
+
+.Violet{
+  background-color: #8B00FF !important;
+}
+
+.ube{
+  background-color: #8878c3 !important;
+}
+
+.Turquoise{
+  background-color: #30D5C8 !important;
+}
+
+.skyblue{
+  background-color: #87CEEB !important;
+}
+
+.ruby{
+  background-color: #E0115F !important;
+}
+
+.quartz{
+  background-color: #51484f !important;
+}
+
+.purple{
+  background-color: #800080 !important;
+}
+
+.orange{
+  background-color: #FF7F00 !important;
+}
+
+.navyblue{
+  background-color: #000080 !important;
+}
+
+.mint{
+  background-color: #3eb489 !important;
+}
+
+.Lavender{
+  background-color: #B57EDC !important;
+}
+
+.Khaki{
+  background-color: #c3b091 !important;
+}
+
+.jade{
+  background-color: #00A86B !important;
+}
+
+.indigo{
+  background-color: #00416A !important;
+}
+
+
+
+
+
