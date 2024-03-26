@@ -533,6 +533,17 @@ padding: 10px !important;
   transition: background-color 0.5s ease;
 }
 
+.showBlock{
+  opacity: 1;
+  transition: opacity 0.5s ease;
 
+}
+
+
+.hideBlock{
+opacity: 0;
+transition: opacity 0.5s ease;
+
+}
 
 

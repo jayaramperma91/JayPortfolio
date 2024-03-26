@@ -769,7 +769,11 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className={`basis-1/3 flex-1 picture-container bg-white `}>
+            <div className={`basis-1/3 flex-1 picture-container bg-white `}
+                onMouseEnter={handleZoom1}
+        onMouseLeave={handleUnzoom1}
+            
+            >
               <Image
               className={`rounded-lg object-cover picture-container ${isZoomed1 ? 'zoomed' : ''}`}
               
@@ -777,88 +781,74 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web1}
-                onMouseEnter={handleZoom1}
-        onMouseLeave={handleUnzoom1}
               />{" "}
-              <p className="pl-10 pr-10">
-                <b>Description</b>
+              <p className={`pl-10 text-center flex justify-center items-center pr-10 py-2 ${isZoomed1?'hideBlock':'showBlock'}`}>
+                Hover over to show description
               </p>
-              <p className="pl-10 pr-10 py-2">
+              <p className={`pl-10 pr-10 py-2 ${isZoomed1?'showBlock':'hideBlock'}`}>
                 Spearheaded a transformative company-wide development initiative
                 in Angular and React. Engineered top-tier web application for
                 over ten different trading and asset allocation teams,
                 meticulously curating layouts, themes, and components to blend
-                user-centric design with cutting-edge functionality Led a
-                comprehensive upgrade project, transitioning from KnockoutJS to
-                Angular 3/4/5 for a multi-asset trading system orchestrating
-                over 10 million monthly trades. Engineered a highly
-                sophisticated portfolio management application,enhancing the
-                optimization of cash flow visibility, streamlining trade
-                execution, and improving overall efficiency in asset management
+                user-centric design with cutting-edge functionality 
               </p>
-              <p className="pl-10 pr-10">
+              <p className={`pl-10 pr-10 ${isZoomed1?'showBlock':'hideBlock'}`}>
                 <b>Technologies </b>
               </p>
-              <p className="pl-10 pr-10 py-1">
+              <p className={`pl-10 pr-10 py-1 ${isZoomed1?'showBlock':'hideBlock'}`}>
                 Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
                 Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
                 Karma
               </p>
             </div>
-            <div className="basis-1/3 flex-1 bg-white">
+            <div className="basis-1/3 flex-1 bg-white"
+                            onMouseEnter={handleZoom2}
+                            onMouseLeave={handleUnzoom2}
+            >
               <Image
               className={`rounded-lg object-cover picture-container ${isZoomed2 ? 'zoomed' : ''}`}
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                onMouseEnter={handleZoom2}
-                onMouseLeave={handleUnzoom2}
+
                 src={web2}
               />
-             <p className="pl-10 pr-10">
-                <b>Description</b>
+  <p className={`pl-10 text-center flex justify-center items-center pr-10 py-2 ${isZoomed2?'hideBlock':'showBlock'}`}>
+                Hover over to show description
               </p>
-              <p className="pl-10 pr-10 py-2">
-                Spearheaded a transformative company-wide development initiative
-                in Angular and React. Engineered top-tier web application for
-                over ten different trading and asset allocation teams,
-                meticulously curating layouts, themes, and components to blend
-                user-centric design with cutting-edge functionality Led a
-                comprehensive upgrade project, transitioning from KnockoutJS to
-                Angular 3/4/5 for a multi-asset trading system orchestrating
-                over 10 million monthly trades. Engineered a highly
-                sophisticated portfolio management application,enhancing the
-                optimization of cash flow visibility, streamlining trade
-                execution, and improving overall efficiency in asset management
+              <p className={`pl-10 pr-10 py-2 ${isZoomed2?'showBlock':'hideBlock'}`} >
+              Led the design and development of Mellon.com's public-facing website using React, 
+              implementing a responsive and dynamic user interface with a focus on performance optimization and scalability. 
+              Utilized React to deliver a seamless browsing 
+              experience across various devices. Successfully deployed and maintained 
+              the website, continuously improving its performance and user engagement metrics
               </p>
-              <p className="pl-10 pr-10">
+              <p className={`pl-10 pr-10 ${isZoomed2?'showBlock':'hideBlock'}`}>
                 <b>Technologies </b>
               </p>
-              <p className="pl-10 pr-10 py-1">
-                Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
-                Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
+              <p  className={`pl-10 pr-10 py-1 ${isZoomed2?'showBlock':'hideBlock'}`}>
+                React, HTML5, CSS3, JavaScript, Figma,
+                Bootstrap, SCSS (SASS),  Jasmine,
                 Karma
               </p>
             </div>
-            <div className="basis-1/3 flex-1 bg-white">
+            <div className="basis-1/3 flex-1 bg-white"
+                            onMouseEnter={handleZoom3}
+                            onMouseLeave={handleUnzoom3}
+            >
               <Image
               className={`rounded-lg object-cover picture-container ${isZoomed3 ? 'zoomed' : ''}`}
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web3}
-                onMouseEnter={handleZoom3}
-                onMouseLeave={handleUnzoom3}
+
               />
-             <p className="pl-10 pr-10">
-                <b>Description</b>
+              <p className={`pl-10 text-center flex justify-center items-center pr-10 py-2 ${isZoomed3?'hideBlock':'showBlock'}`}>
+                Hover over to show description
               </p>
-              <p className="pl-10 pr-10 py-2">
-                Spearheaded a transformative company-wide development initiative
-                in Angular and React. Engineered top-tier web application for
-                over ten different trading and asset allocation teams,
-                meticulously curating layouts, themes, and components to blend
-                user-centric design with cutting-edge functionality Led a
+              <p className={`pl-10 pr-10 py-2 ${isZoomed3?'showBlock':'hideBlock'}`}>
+               Led a
                 comprehensive upgrade project, transitioning from KnockoutJS to
                 Angular 3/4/5 for a multi-asset trading system orchestrating
                 over 10 million monthly trades. Engineered a highly
@@ -866,31 +856,31 @@ export default function Home() {
                 optimization of cash flow visibility, streamlining trade
                 execution, and improving overall efficiency in asset management
               </p>
-              <p className="pl-10 pr-10">
+              <p className={`pl-10 pr-10 ${isZoomed3?'showBlock':'hideBlock'}`}>
                 <b>Technologies </b>
               </p>
-              <p className="pl-10 pr-10 py-1">
+              <p className={`pl-10 pr-10 py-1 ${isZoomed3?'showBlock':'hideBlock'}`}>
                 Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
                 Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
                 Karma
               </p>
             </div>
-            <div className="basis-1/3 flex-1 bg-white">
+            <div className="basis-1/3 flex-1 bg-white"
+                            onMouseEnter={handleZoom4}
+                            onMouseLeave={handleUnzoom4}
+            >
               <Image
               className={`rounded-lg object-cover picture-container ${isZoomed4 ? 'zoomed' : ''}`}
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web4}
-                onMouseEnter={handleZoom4}
-                onMouseLeave={handleUnzoom4}
+
               />
-             <p className="pl-10 pr-10">
-                <b> <a href="https://www.pantechsolutions.net">
-                  Pantech Solutions
-                </a> </b>
+  <p className={`pl-10 text-center flex justify-center items-center pr-10 py-2 ${isZoomed4?'hideBlock':'showBlock'}`}>
+                Hover over to show description
               </p>
-              <p className="pl-10 pr-10 py-2">
+              <p className={`pl-10 pr-10 py-2 ${isZoomed4?'showBlock':'hideBlock'}`}>
               Collaborated with an e-learning platform, contributing UI expertise to create
 engaging and user-friendly interfaces for online courses 
 
@@ -900,10 +890,10 @@ showcased AI capabilities.
 Utilized Tailwind and SCSS (SASS) for efficient styling, ensuring a visually
 appealing and cohesive design across various screens.
               </p>
-              <p className="pl-10 pr-10">
+              <p className={`pl-10 pr-10 ${isZoomed4?'showBlock':'hideBlock'}`}>
                 <b>Technologies </b>
               </p>
-              <p className="pl-10 pr-10 py-1">
+              <p className={`pl-10 pr-10 py-1 ${isZoomed4?'showBlock':'hideBlock'}`}>
               React, HTML5, CSS3, JavaScript/Typescript, Bootstrap,
 Tailwind, SCSS (SASS), Figma
               </p>
