@@ -242,6 +242,7 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">Jay&apos;s Canvas</h1>
+
             <ul className="flex items-center">
               <li>
                 <a
@@ -277,7 +278,10 @@ export default function Home() {
                 />
               </li>
             </ul>
+            
           </nav>
+          <h1 className="font-burtons text-xl dark:text-white">Press a letter for a theme</h1>
+
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Jayaram Chandrasekar
