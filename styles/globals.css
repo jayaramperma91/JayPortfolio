@@ -397,107 +397,141 @@ padding: 10px !important;
 
 
 .apple{
+  transition: background-color 0.5s ease;
   background-color: #8b0202 !important;
 }
 .black{
+  transition: background-color 0.5s ease;
   background-color: black !important;
 }
 
 .calamine{
+  transition: background-color 0.5s ease;
   background-color: #fea0b7 !important;
 }
 .dandelion{
+  transition: background-color 0.5s ease;
   background-color: #FED85D !important;
 }
 
 .EmeraldGreen{
+  transition: background-color 0.5s ease;
   background-color: #50C878 !important;
 }
 
 .Fawn{
+  transition: background-color 0.5s ease;
   background-color: #e5aa70 !important;
 }
 
 .grape{
+  transition: background-color 0.5s ease;
   background-color: #6f2da8 !important;
 }
 
 .heaven{
+  transition: background-color 0.5s ease;
   background-color: #b4b0ec !important;
 }
 
 .zomp{
+  transition: background-color 0.5s ease;
   background-color: #39a78e !important;
 }
 
 .yellow{
+  transition: background-color 0.5s ease;
   background-color: yellow !important;
 }
 
 .Xanadu{
+  transition: background-color 0.5s ease;
   background-color: #738678 !important;
 }
 
 .white{
+  transition: background-color 0.5s ease;
   background-color: white !important;
 }
 
 .Violet{
+  transition: background-color 0.5s ease;
   background-color: #8B00FF !important;
 }
 
 .ube{
   background-color: #8878c3 !important;
+  transition: background-color 0.5s ease;
 }
 
 .Turquoise{
+  transition: background-color 0.5s ease;
   background-color: #30D5C8 !important;
 }
 
 .skyblue{
   background-color: #87CEEB !important;
+  transition: background-color 0.5s ease;
 }
 
 .ruby{
+  transition: background-color 0.5s ease;
   background-color: #E0115F !important;
 }
 
 .quartz{
+  transition: background-color 0.5s ease;
   background-color: #51484f !important;
 }
 
 .purple{
+  transition: background-color 0.5s ease;
   background-color: #800080 !important;
 }
 
 .orange{
+  transition: background-color 0.5s ease;
   background-color: #FF7F00 !important;
 }
 
 .navyblue{
+  transition: background-color 0.5s ease;
   background-color: #000080 !important;
+
 }
 
 .mint{
   background-color: #3eb489 !important;
+  transition: background-color 0.5s ease;
+
 }
 
 .Lavender{
+  transition: background-color 0.5s ease;
   background-color: #B57EDC !important;
 }
 
 .Khaki{
   background-color: #c3b091 !important;
+  transition: background-color 0.5s ease;
+
 }
 
 .jade{
   background-color: #00A86B !important;
+  transition: background-color 0.5s ease;
+
 }
 
 .indigo{
   background-color: #00416A !important;
+  transition: background-color 0.5s ease;
+
 }
 
+.colorful-background{
+  transition: background-color 0.5s ease;
+}
 
 
 
