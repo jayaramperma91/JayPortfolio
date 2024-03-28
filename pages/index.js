@@ -53,34 +53,34 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 export default function Home() {
   const colorHashTable = {
-    a:{color:'apple',dark:true},
-    b:{color:'black',dark:true},
-    c:{color:'calamine',dark:false},
+    a: { color: "apple", dark: true },
+    b: { color: "black", dark: true },
+    c: { color: "calamine", dark: false },
 
-    d:{color:'dandelion',dark:false},
-    e:{color:'EmeraldGreen',dark:false},
-    f:{color:'Fawn',dark:false},
-    g:{color:'grape',dark:true},
-    h:{color:'heaven',dark:false},
-    i:{color:'indigo',dark:true},
-    j:{color:'jade',dark:true},
-    k:{color:'Khaki',dark:false},
-    l:{color:'Lavender',dark:true},
-    m:{color:'mint',dark:false},
-    n:{color:'navyblue',dark:true},
-    o:{color:'orange',dark:false},
-    p:{color:'purple',dark:true},
-    q:{color:'quartz',dark:true},
-    r:{color:'ruby',dark:true},
-    s:{color:'skyblue',dark:false},
-    t:{color:'Turquoise',dark:false},
-    u:{color:'ube',dark:true},
-    v:{color:'Violet',dark:true},
-    w:{color:'white',dark:false},
-    x:{color:'Xanadu',dark:true},
-    y:{color:'yellow',dark:false},
-    z:{color:'zomp',dark:true},
-  }
+    d: { color: "dandelion", dark: false },
+    e: { color: "EmeraldGreen", dark: false },
+    f: { color: "Fawn", dark: false },
+    g: { color: "grape", dark: true },
+    h: { color: "heaven", dark: false },
+    i: { color: "indigo", dark: true },
+    j: { color: "jade", dark: true },
+    k: { color: "Khaki", dark: false },
+    l: { color: "Lavender", dark: true },
+    m: { color: "mint", dark: false },
+    n: { color: "navyblue", dark: true },
+    o: { color: "orange", dark: false },
+    p: { color: "purple", dark: true },
+    q: { color: "quartz", dark: true },
+    r: { color: "ruby", dark: true },
+    s: { color: "skyblue", dark: false },
+    t: { color: "Turquoise", dark: false },
+    u: { color: "ube", dark: true },
+    v: { color: "Violet", dark: true },
+    w: { color: "white", dark: false },
+    x: { color: "Xanadu", dark: true },
+    y: { color: "yellow", dark: false },
+    z: { color: "zomp", dark: true },
+  };
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -91,7 +91,7 @@ export default function Home() {
   };
   const [darkMode, setDarkMode] = useState(true);
   const [animateVertical, setanimateVertical] = useState(true);
-  const [color,setColor] = useState('quartz')
+  const [color, setColor] = useState("quartz");
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -215,21 +215,21 @@ export default function Home() {
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
-  };  
+  };
   const handleKeyDown = (event) => {
-    console.log('Key pressed:', event.key);
+    console.log("Key pressed:", event.key);
     // You can perform actions based on the pressed key here (e.g., if (event.key === 'Enter') { ... })
-    if(colorHashTable[event.key]){
-    setColor(colorHashTable[event.key]['color'])
-    setDarkMode(colorHashTable[event.key]['dark'])
+    if (colorHashTable[event.key]) {
+      setColor(colorHashTable[event.key]["color"]);
+      setDarkMode(colorHashTable[event.key]["dark"]);
     }
   };
 
   useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener("keydown", handleKeyDown);
 
     // Cleanup function to remove the event listener when the component unmounts
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
   return (
     <div className={` colorful-background ${color} ${darkMode ? "dark" : ""}`}>
@@ -278,9 +278,10 @@ export default function Home() {
                 />
               </li> */}
             </ul>
-            
           </nav>
-          <h1 className="font-burtons text-xl dark:text-white">Press a letter for a color : {color}</h1>
+          <h1 className="font-burtons text-xl dark:text-white">
+            Press a letter for a color : {color}
+          </h1>
 
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
@@ -768,86 +769,69 @@ export default function Home() {
               teaching—to bring innovation to both business and consumer spaces
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className={`basis-1/3 flex-1 picture-container bg-white `}
-                onMouseEnter={handleZoom1}
-        onMouseLeave={handleUnzoom1}
-            
-            >
-              <Image
-              className={`rounded-lg object-cover picture-container ${isZoomed1 ? 'zoomed' : ''}`}
-              
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-              />{" "}
-              <p className={`pl-10 text-center flex justify-center items-center pr-10 py-2 ${isZoomed1?'hideBlock':'showBlock'}`}>
-                Hover over to show description
-              </p>
-              <p className={`pl-10 pr-10 py-2 ${isZoomed1?'showBlock':'hideBlock'}`}>
+          <div class="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div class="flex-1">
+        <div class="flip-card mx-auto w-96 h-96 bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flex flex-col justify-center items-center bg-gray-200">
+                <img src="web1.png" className="object-cover w-full h-full"  alt="Avatar"/>
+                </div>
+                <div class="flip-card-back flex flex-col justify-center items-center bg-blue-500 text-white rotate-180">
+                <p className={`pl-10 pr-10 py-2 `}>
                 Spearheaded a transformative company-wide development initiative
                 in Angular and React. Engineered top-tier web application for
                 over ten different trading and asset allocation teams,
                 meticulously curating layouts, themes, and components to blend
                 user-centric design with cutting-edge functionality 
               </p>
-              <p className={`pl-10 pr-10 ${isZoomed1?'showBlock':'hideBlock'}`}>
+              <p className={`pl-10 pr-10 `}>
                 <b>Technologies </b>
               </p>
-              <p className={`pl-10 pr-10 py-1 ${isZoomed1?'showBlock':'hideBlock'}`}>
+              <p className={`pl-10 pr-10 py-1 `}>
                 Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
                 Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
                 Karma
               </p>
+                </div>
             </div>
-            <div className="basis-1/3 flex-1 bg-white"
-                            onMouseEnter={handleZoom2}
-                            onMouseLeave={handleUnzoom2}
-            >
-              <Image
-              className={`rounded-lg object-cover picture-container ${isZoomed2 ? 'zoomed' : ''}`}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
+        </div>
+    </div>
+    <div class="flex-1">
+        <div class="flip-card mx-auto w-96 h-96 bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flex flex-col justify-center items-center bg-gray-200">
+                <img src="web2.png" className="object-cover w-full h-full"  alt="Avatar"/>
 
-                src={web2}
-              />
-  <p className={`pl-10 text-center flex justify-center items-center pr-10 py-2 ${isZoomed2?'hideBlock':'showBlock'}`}>
-                Hover over to show description
-              </p>
-              <p className={`pl-10 pr-10 py-2 ${isZoomed2?'showBlock':'hideBlock'}`} >
+                </div>
+                <div class="flip-card-back flex flex-col justify-center items-center bg-blue-500 text-white rotate-180">
+                <p className={`pl-10 pr-10 py-2 `} >
               Led the design and development of Mellon.com&apos;s public-facing website using React, 
               implementing a responsive and dynamic user interface with a focus on performance optimization and scalability. 
               Utilized React to deliver a seamless browsing 
               experience across various devices. Successfully deployed and maintained 
               the website, continuously improving its performance and user engagement metrics
               </p>
-              <p className={`pl-10 pr-10 ${isZoomed2?'showBlock':'hideBlock'}`}>
+              <p className={`pl-10 pr-10 `}>
                 <b>Technologies </b>
               </p>
-              <p  className={`pl-10 pr-10 py-1 ${isZoomed2?'showBlock':'hideBlock'}`}>
+              <p  className={`pl-10 pr-10 py-1 `}>
                 React, HTML5, CSS3, JavaScript, Figma,
                 Bootstrap, SCSS (SASS),  Jasmine,
                 Karma
               </p>
+                </div>
             </div>
-            <div className="basis-1/3 flex-1 bg-white"
-                            onMouseEnter={handleZoom3}
-                            onMouseLeave={handleUnzoom3}
-            >
-              <Image
-              className={`rounded-lg object-cover picture-container ${isZoomed3 ? 'zoomed' : ''}`}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
+        </div>
+    </div>
+            <div class="flex-1">
+        <div class="flip-card mx-auto w-96 h-96 bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flex flex-col justify-center items-center bg-gray-200">
+                <img src="web3.png" className="object-cover w-full h-full"  alt="Avatar"/>
 
-              />
-              <p className={`pl-10 text-center flex justify-center items-center pr-10 py-2 ${isZoomed3?'hideBlock':'showBlock'}`}>
-                Hover over to show description
-              </p>
-              <p className={`pl-10 pr-10 py-2 ${isZoomed3?'showBlock':'hideBlock'}`}>
+                </div>
+                <div class="flip-card-back flex flex-col justify-center items-center bg-blue-500 text-white rotate-180">
+                <p className={`pl-10 pr-10 py-2 `}>
                Led a
                 comprehensive upgrade project, transitioning from KnockoutJS to
                 Angular 3/4/5 for a multi-asset trading system orchestrating
@@ -856,48 +840,44 @@ export default function Home() {
                 optimization of cash flow visibility, streamlining trade
                 execution, and improving overall efficiency in asset management
               </p>
-              <p className={`pl-10 pr-10 ${isZoomed3?'showBlock':'hideBlock'}`}>
+              <p className={`pl-10 pr-10 `}>
                 <b>Technologies </b>
               </p>
-              <p className={`pl-10 pr-10 py-1 ${isZoomed3?'showBlock':'hideBlock'}`}>
+              <p className={`pl-10 pr-10 py-1 `}>
                 Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
                 Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
                 Karma
               </p>
+                </div>
             </div>
-            <div className="basis-1/3 flex-1 bg-white"
-                            onMouseEnter={handleZoom4}
-                            onMouseLeave={handleUnzoom4}
-            >
-              <Image
-              className={`rounded-lg object-cover picture-container ${isZoomed4 ? 'zoomed' : ''}`}
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
+        </div>
+    </div>
+    <div class="flex-1">
+        <div class="flip-card mx-auto w-96 h-96 bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flex flex-col justify-center items-center bg-gray-200">
+                <img src="web4.png" className="object-cover w-full h-full"  alt="Avatar"/>
 
-              />
-  <p className={`pl-10 text-center flex justify-center items-center pr-10 py-2 ${isZoomed4?'hideBlock':'showBlock'}`}>
-                Hover over to show description
-              </p>
-              <p className={`pl-10 pr-10 py-2 ${isZoomed4?'showBlock':'hideBlock'}`}>
+                </div>
+                <div class="flip-card-back flex flex-col justify-center items-center bg-blue-500 text-white rotate-180">
+                <p className={`pl-10 pr-10 py-2 `}>
               Collaborated with an e-learning platform, contributing UI expertise to create
 engaging and user-friendly interfaces for online courses 
 
-Worked with a startup&apos;s team to integrate detailed content while maintaining a
-user-friendly interface, ensuring visitors could easily explore and understand the
-showcased AI capabilities.
 Utilized Tailwind and SCSS (SASS) for efficient styling, ensuring a visually
 appealing and cohesive design across various screens.
               </p>
-              <p className={`pl-10 pr-10 ${isZoomed4?'showBlock':'hideBlock'}`}>
+              <p className={`pl-10 pr-10 `}>
                 <b>Technologies </b>
               </p>
-              <p className={`pl-10 pr-10 py-1 ${isZoomed4?'showBlock':'hideBlock'}`}>
+              <p className={`pl-10 pr-10 py-1 `}>
               React, HTML5, CSS3, JavaScript/Typescript, Bootstrap,
 Tailwind, SCSS (SASS), Figma
               </p>
+                </div>
             </div>
+        </div>
+    </div>
           </div>
         </section>
         <nav className="py-10 flex justify-between dark:text-white">
@@ -956,13 +936,10 @@ Tailwind, SCSS (SASS), Figma
                 Francisco and an online e-learning platform in Chennai.Engaged
                 in impactful projects across diverse industry landscapes, I
                 contributed my expertise to elevate user experiences and
-                interface functionalities.  
-               
+                interface functionalities.
               </p>
               <p>
-              <a href="https://www.pantechsolutions.net">
-                Pantech Solutions
-                </a>
+                <a href="https://www.pantechsolutions.net">Pantech Solutions</a>
                 , I played a key role in refining the UI of their e-learning
                 platform. Collaborating with the team, I ensured the creation of
                 engaging and user-friendly interfaces for online courses.
