@@ -779,7 +779,7 @@ export default function Home() {
                 <div class="flip-card-back flex flex-col justify-center items-center bg-blue-500 text-white rotate-180">
                 <p className={`pl-10 pr-10 py-2 `}>
                 Spearheaded a transformative company-wide development initiative
-                in Angular and React. Engineered top-tier web application for
+                in React. Engineered top-tier web application for
                 over ten different trading and asset allocation teams,
                 meticulously curating layouts, themes, and components to blend
                 user-centric design with cutting-edge functionality 
@@ -788,9 +788,7 @@ export default function Home() {
                 <b>Technologies </b>
               </p>
               <p className={`pl-10 pr-10 py-1 `}>
-                Angular, React, HTML5, CSS3, JavaScript/Typescript, Figma,D3.js,
-                Bootstrap, SCSS (SASS), Node.js, Ag-Grid, MongoDB, Jasmine,
-                Karma
+              React.js, GraphQL, Node.js, JavaScript, Redux, RxJS, Webpack, Tailwind CSS, Figma, D3.js, Cypress, Playwright, MongoDB.
               </p>
                 </div>
             </div>
@@ -909,14 +907,11 @@ Tailwind, SCSS (SASS), Figma
               <h3 className="vertical-timeline-element-subtitle">
                 San Francisco, CA
               </h3>
-              <p>
-                Initiated a company-wide development project in Angular and
-                React, designing a unified application layout. Oversaw the
-                complete development, designing layouts, themes, business
-                workflows, components, controls, charts, and data grids across
-                more than ten applications, enhancing the application used by
-                portfolio managers for trade management and reporting.
-              </p>
+              
+              <p>Spearheaded a transformative company-wide development initiative in React.js using Nx Mono Repo, achieving a 35% increase in user satisfaction and a 20% reduction in user-reported issues, leading to a 10% increase in trading efficiency. Developed multiple trading applications within a single mono repo, utilizing modern technologies such as React.js, GraphQL, Node.js, JavaScript, Redux, RxJS, Webpack, Tailwind CSS, Figma, D3.js, Cypress, Playwright, and MongoDB.</p>
+
+<p>Designed and developed <a href="https://www.mellon.com">Mellon.com</a>’s public-facing website using React.js, prioritizing responsive design and integrating advanced features with Webpack, Figma, D3.js, and MongoDB. Implemented comprehensive testing with Jest, Cypress, and Playwright to ensure high-quality performance.</p>
+              
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
@@ -931,28 +926,18 @@ Tailwind, SCSS (SASS), Figma
               <h3 className="vertical-timeline-element-subtitle">
                 San Francisco, CA & Chennai,India
               </h3>
-              <p>
-                Designed and developed two websites for an AI startup in San
-                Francisco and an online e-learning platform in Chennai.Engaged
-                in impactful projects across diverse industry landscapes, I
-                contributed my expertise to elevate user experiences and
-                interface functionalities.
-              </p>
+             <p>
+             Collaborated with an e-learning platform, Pantech Solutions, contributing UI expertise to create engaging and user-friendly interfaces for online courses. Built a dynamic, responsive e-learning platform using React, Adobe XD, GraphQL, Node.js, TypeScript, SQL, AWS, Python, and Webpack, significantly enhancing user experience and driving engagement.
+</p><p>
+Utilized Tailwind and SCSS (SASS) for efficient styling, ensuring a cohesive design across various screens. Improved page load times by 30% and contributed to a 10% increase in revenue from course sales.
+             </p>
               <p>
                 <a href="https://www.pantechsolutions.net">Pantech Solutions</a>
                 , I played a key role in refining the UI of their e-learning
                 platform. Collaborating with the team, I ensured the creation of
                 engaging and user-friendly interfaces for online courses.
               </p>
-              <p>
-                Simultaneously, in the dynamic environment of an AI startup
-                based in the Bay Area, I contributed to crafting seamless user
-                interfaces that showcased cutting-edge AI capabilities. This
-                dual experience allowed me to navigate varied challenges,
-                applying my skills to enhance digital interactions both in
-                established platforms and innovative startups in the tech hub of
-                the Bay Area.
-              </p>
+             
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
@@ -967,13 +952,10 @@ Tailwind, SCSS (SASS), Figma
                 San Francisco, CA
               </h3>
               <p>
-                Led a comprehensive upgrade project, transitioning from
-                KnockoutJS to Angular 3/4/5 for a multi-asset trading system
-                handling over 10M in monthly trades for diverse assets like
-                stocks, bonds, and commodities. Spearheaded the overhaul,
-                ensuring a seamless transition and improved functionality,
-                enabling portfolio managers to efficiently view cash flows, set
-                targets, execute trades, and manage diverse assets
+              Led the transition from Knockout.JS to Angular for a multi-asset trading system handling over $10M in monthly trades, achieving a 30% improvement in page load times and reducing maintenance overhead by 40%. Developed and continuously supported a portfolio management application using Angular, Node.js, TypeScript, RxJS, Webpack, and Material UI.
+</p>
+<p>
+Integrated testing with Jasmine, Karma, and Protractor.js to ensure application reliability. Enhanced the user interface and functionality with Bootstrap, Figma, and Moment.js, leading to improved portfolio management for better cash flow visibility and trade execution.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -990,16 +972,16 @@ Tailwind, SCSS (SASS), Figma
                 Masters&apos;s Degree
               </h3>
 
-              <p>Engineering Management </p>
+              <p>Electrical Engineering and Engineering Management </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
-              date="2014 - 2016"
+              date="2008 - 2012"
               iconStyle={{ background: "#3e497a", color: "#fff" }}
               icon={<SchoolIcon />}
             >
               <h4 className="vertical-timeline-element-title">
-                NJIT , Newark , NJ
+                Anna University , Chennai India
               </h4>
 
               <h3 className="vertical-timeline-element-subtitle">
